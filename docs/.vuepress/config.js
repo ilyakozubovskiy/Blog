@@ -10,7 +10,7 @@ module.exports = {
         ],
         // sidebar: 'auto'
     },
-    base: '/blog/',
+    base: '/',
     plugins: [
         ['@vuepress/search', {
           searchMaxSuggestions: 10
