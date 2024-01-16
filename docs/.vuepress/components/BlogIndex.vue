@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 	<div id="">
   
 	  <div class="card-panel-content row" itemscope itemtype="http://schema.org/Blog">
@@ -141,4 +141,4 @@
   .username
 	margin-top:-10px;
   </style>
-  
+   -->
