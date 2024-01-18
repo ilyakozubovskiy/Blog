@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Ilya Kozubovskiy',
   base: '/',
-  description: 'Microsft',
+  description: 'Microsoft',
   theme: require.resolve('../../'),
   themeConfig: {
   authors: [
