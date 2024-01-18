@@ -1,6 +1,6 @@
 <template>
 <footer class="themefooter">
-  <div> </div>
+
 <div class="container">
 <div class="row justify-content-between">
 <div class="col">

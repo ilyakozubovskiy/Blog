@@ -1,5 +1,21 @@
 {
+  "name": "vuepress-theme-mediumish",
+  "version": "1.0.32",
+  "description": "Mediumish blog theme for VuePress",
+  "keywords": [
+    "vue",
+    "vuepress",
+    "vuepress-theme",
+    "blog-theme",
+    "blog",
+    "theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "wowthemesnet/mediumish-vuepress-blog-theme"
+  },
   "license": "MIT",
+  "author": "sal<wowthemesnet@gmail.com>",
   "main": "index.js",
   "files": [
     "index.js",
@@ -16,6 +32,11 @@
     "prepublishOnly": "npm run test && npm run docs:build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix",
@@ -27,6 +48,7 @@
     ]
   },
   "dependencies": {
+    "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/plugin-medium-zoom": "1.0.0",
     "@vuepress/plugin-nprogress": "1.0.0",
     "@vuepress/plugin-pwa": "1.0.0",
@@ -39,7 +61,6 @@
     "vuepress-plugin-smooth-scroll": "^0.0.9"
   },
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.9.4",
     "babel-eslint": "^10.0.3",
     "conventional-changelog-cli": "^2.0.1",
     "eslint": "^6.8.0",
