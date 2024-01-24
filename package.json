@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-theme-mediumish",
-  "version": "1.0.32",
-  "description": "Mediumish blog theme for VuePress",
+  "name": "ilya-kozubovskiy-blog",
+  "version": "1.0.0.0",
+  "description": "Ilya Kozubovskiy Blog",
   "keywords": [
     "vue",
     "vuepress",
@@ -12,10 +12,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "ellapresso/ellapresso.github.io"
+    "url": "https://github.com/ilyakozubovskiy"
   },
   "license": "MIT",
-  "author": "ellapresso@gmail.com",
+  "author": "ilyakozubovskiy@outlook.com",
   "main": "index.js",
   "files": [
     "index.js",

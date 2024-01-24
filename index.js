@@ -7,19 +7,11 @@ module.exports = (themeConfig) => {
    * Default theme configuration
    */
   themeConfig = Object.assign(themeConfig, {
-    logo: '/assets/img/logo.png',
+    logo: '/images/mountains.jpg',
     nav: themeConfig.nav || [
       {
-        text: 'Develog',
+        text: 'Blog',
         link: '/',
-      },
-      {
-        text: '디-발자',
-        link: '/blog/',
-      },
-      {
-        text: '잔디정원사',
-        link: '/jandi/',
       },
       {
         text: 'Tags',
