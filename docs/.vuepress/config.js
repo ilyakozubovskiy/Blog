@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Ilya Kozubovskiy',
   head: [
-    ['link', { rel: 'icon', href: '/images/mountains.jpg' }],
-   ],
+    ['link', { rel: 'icon', href: '/images/logo.png' }],
+  ],
 
   base: '/',
   description: 'Blog',
@@ -11,23 +11,33 @@ module.exports = {
     authors: [
       {
         name: 'Ilya',
-        avatar: '/public/me.png',
+        avatar: '/images/me.png',
         link: 'https://www.linkedin.com/in/ilyakozubovskiy/',
         linktext: 'Contact Me',
-      },
+      }
     ],
     footer: {
       contact: [
+        {
+          type: 'linkedin',
+          link: 'https://www.linkedin.com/in/ilyakozubovskiy/',
+        },
+        {
+          type: 'mail',
+          link: 'mailto:ilyakozubovskiy@outlook.com',
+        },
+        {
+          type: 'github',
+          link: 'https://github.com/ilyakozubovskiy',
+        },
+        
       ],
       copyright: [
         {
-          text: 'Licensed MIT.',
-          link: 'https://bootstrapstarter.com/terms-and-conditions/',
+          text: 'MIT Licensed',
+          link: 'https://opensource.org/license/mit/',
         },
-        {
-          text: 'Hello World',
-          link: 'microsoft.com',
-        },
+       
       ],
     },
     sitemap: {

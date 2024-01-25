@@ -7,7 +7,7 @@ module.exports = (themeConfig) => {
    * Default theme configuration
    */
   themeConfig = Object.assign(themeConfig, {
-    logo: '/images/mountains.jpg',
+    logo: '/images/logo.png',
     nav: themeConfig.nav || [
       {
         text: 'Blog',
@@ -40,12 +40,7 @@ module.exports = (themeConfig) => {
         id: 'blog',
         dirname: '_blog',
         path: '/blog/',
-      },
-      {
-        id: 'jandi',
-        dirname: '_jandi',
-        path: '/jandi/',
-      },
+      }
     ],
     frontmatters: [
       {

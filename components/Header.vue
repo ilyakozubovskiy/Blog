@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
           <div class="container">
             <NavLink link="/" class="navbar-brand"
-              ><img :src="$withBase($themeConfig.logo)" /> {{ $site.title }}
+              > {{ $site.title }}
             </NavLink>
             <button
               class="navbar-toggler"
