@@ -26,27 +26,10 @@
     "components"
   ],
   "scripts": {
-    "build": "vuepress build docs --temp docs/.temp",
-    "dev": "vuepress dev docs --temp docs/.temp",
-    "lint": "eslint . --ext .js,.vue",
-    "prepublishOnly": "npm run test && npm run docs:build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
-    "test": "jest"
+    "build": "vuepress build docs",
+    "dev": "vuepress dev docs"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "package.json": [
-      "sort-package-json",
-      "git add"
-    ]
-  },
+
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-blog": "^1.9.2",
@@ -65,16 +48,7 @@
     "vuepress-plugin-smooth-scroll": "^0.0.9"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
     "conventional-changelog-cli": "^2.0.1",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-sherry": "0.0.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vue": "^6.0.1",
-    "husky": "^3.1.0",
-    "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
     "sort-package-json": "^1.31.0",
     "vuepress": "^1.2.0"
   },
