@@ -83,4 +83,11 @@ export default {
 
 .tag-box-txt
   line-height 60px
+
+  
 </style>
+
+<style>
+.featuredimg {
+    max-width: 90%;
+}</style>

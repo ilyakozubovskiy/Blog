@@ -49,9 +49,22 @@ export default {
 }
 </script>
 
+<style>
+.router-link-active{
+  color: #03a87c !important;
+}
+.nav-link{
+  font-size: 18px !important;
+}
+.navbar-brand{
+ color: black !important
+}
+</style>
+
 <style lang="stylus">
 @import '~@app/style/config'
 // border-bottom 5px solid lighten(#3eaf7c, 50%)
+color red
 .header-wrapper
   .title
     /* flex 0 0 200px */
@@ -83,6 +96,7 @@ export default {
         a
           text-decoration none
           transition color 0.3s
+    
 
     .search-box
       margin-left 20px
@@ -107,6 +121,8 @@ export default {
 
           &.focused
             color $accentColor
+
+             
 
 @media (max-width: $MQMobile)
   #header

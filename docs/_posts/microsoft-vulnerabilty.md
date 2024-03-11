@@ -1,12 +1,12 @@
 ---
-title: Magical nature, God is perfect
-date: 2018-11-7
+title: Microsoft $5,000 Vulnerabilty
+date: 2024-11-3
 tags: 
-  - frontmatter
-  - vuepress
-author: Sal
+  - Bug Bounty
+  - Microsoft
+author: Ilya
 featuredimg: https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=1350&q=80
-summary: I have travelled for so long that I can't even remember my own city.
+summary: Microsoft Pays $5,000 under Microsoft Dynamics 365 and Power Platform Bounty Program.
 
 ---
 
@@ -101,12 +101,32 @@ Override the default meta title.
 
 Specify extra meta tags to be injected:
 
-``` yaml
----
-meta:
-  - name: description
-    content: hello
-  - name: keywords
-    content: super duper SEO
----
+``` cs
+public static void ExportManagedSolution(IOrganizationService service, string solutionName, Guid recordGuid, string fileAttributeName)
+
+ {
+
+     var initializeFileBlocksDownloadRequest = new InitializeFileBlocksDownloadRequest
+
+     {
+
+         Target = new EntityReference(solutionName, recordGuid),
+
+         FileAttributeName = fileAttributeName
+
+     };
+
+ var initializeFileBlocksDownloadResponse = (InitializeFileBlocksDownloadResponse)
+     service.Execute(initializeFileBlocksDownloadRequest);
+
+ var downloadBlockRequest = new DownloadBlockRequest
+ {
+     FileContinuationToken = initializeFileBlocksDownloadResponse.FileContinuationToken
+ };
+
+ var downloadBlockResponse = (DownloadBlockResponse)service.Execute(downloadBlockRequest);
+
+ File.WriteAllBytes(initializeFileBlocksDownloadResponse.FileName,
+     downloadBlockResponse.Data);
+}
 ```

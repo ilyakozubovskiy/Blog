@@ -17,6 +17,10 @@ module.exports = (themeConfig) => {
         text: 'Tags',
         link: '/tag/',
       },
+      {
+        text: 'About Me',
+        link: '/about/',
+      }
     ],
     summary: themeConfig.summary === undefined ? true : themeConfig.summary,
     summaryLength:
@@ -32,22 +36,23 @@ module.exports = (themeConfig) => {
   const defaultBlogPluginOptions = {
     directories: [
       {
-        id: 'post',
+        id: 'blog',
         dirname: '_posts',
         path: '/',
       },
       {
-        id: 'blog',
-        dirname: '_blog',
-        path: '/blog/',
+        id: 'about',
+        dirname: '_about',
+        path: '/about/',
+        layout: 'AboutMe',
       }
     ],
     frontmatters: [
       {
-        id: 'tag',
+        id: 'tags',
         keys: ['tags'],
         path: '/tag/',
-      },
+      }
     ],
     globalPagination: {
       lengthPerPage: 9,
