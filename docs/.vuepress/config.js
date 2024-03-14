@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Ilya Kozubovskiy',
   head: [
-    ['link', { rel: 'icon', href: '/images/logo.png' }],
+    ['link', { rel: 'icon', href: '/images/d365.png' }],
   ],
 
   base: '/',
@@ -12,7 +12,7 @@ module.exports = {
       {
         name: 'Ilya',
         avatar: '/images/me.png',
-        link: 'https://www.linkedin.com/in/ilyakozubovskiy/',
+        link: 'mailto:ilyakozubovskiy@outlook.com',
         linktext: 'Contact Me',
       }
     ],

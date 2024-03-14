@@ -3,9 +3,11 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col">
-          <a href="https://vuejs.org/"
-            ><img class="logofooter" :src="$withBase($themeConfig.logo) "
-          /></a>
+       
+          <a href="https://dotnet.microsoft.com/en-us/" target="_blank"><img class="logofooter" :src="$withBase($themeConfig.dotnet) "/></a>
+          <a href="https://www.microsoft.com/en-us/dynamics-365" target="_blank" ><img class="logofooter" :src="$withBase($themeConfig.d365) "/></a>
+          <a href="https://azure.microsoft.com/en-us"  target="_blank"><img class="logofooter" :src="$withBase($themeConfig.azure) "/></a>
+          <a href="https://vuejs.org/"  target="_blank"><img class="logofooter" :src="$withBase($themeConfig.logo) "/></a>
         </div>
         <div class="col text-right">
           <div v-if="contact" class="list-unstyled">

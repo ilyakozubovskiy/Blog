@@ -8,6 +8,10 @@ module.exports = (themeConfig) => {
    */
   themeConfig = Object.assign(themeConfig, {
     logo: '/images/logo.png',
+    dotnet: '/images/dotnet.png',
+    d365: '/images/d365.png',
+    azure: '/images/azure.png',
+
     nav: themeConfig.nav || [
       {
         text: 'Blog',

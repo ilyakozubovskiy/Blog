@@ -2,8 +2,9 @@
 title: Microsoft $5,000 Vulnerabilty
 date: 2024-11-3
 tags: 
-  - Bug Bounty
   - Microsoft
+  - Bug Bounty
+ 
 author: Ilya
 featuredimg: https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=1350&q=80
 summary: Microsoft Pays $5,000 under Microsoft Dynamics 365 and Power Platform Bounty Program.
