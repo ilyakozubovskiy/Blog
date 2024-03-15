@@ -42,7 +42,7 @@
     "lodash": "^4.17.15",
     "remove-markdown": "^0.3.0",
     "vue-feather-icons": "^4.21.0",
-    "vue-flux": "^6.0.4",
+    "vue-flux": "6.0.4",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-smooth-scroll": "^0.0.9"
