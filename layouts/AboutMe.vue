@@ -23,11 +23,43 @@
       </div>
     </div>
 
- 
-  </div>
+    <vue-flux :options="vfOptions" :images="vfImages" :transitions="vfTransitions" ref="slider"/>
+
+
+</div>
   
 </template>
 
+<script>
+import { VueFlux, FluxPreloader } from "vue-flux";
+
+export default {
+
+  components: {
+    VueFlux,
+    FluxPreloader
+  },
+
+  data: () => ({
+    vfOptions: {
+      delay: 2000,
+      autoplay: true
+    },
+    vfImages: 
+    ['/images/pl400cert.jpg',
+    '/images/scnsoftcert.jpg',
+    '/images/pl900cert.jpg',
+    '/images/cppyellow.jpg',
+    '/images/az900cert.jpg',
+    '/images/cppwhite.jpg',
+    '/images/mb910cert.jpg',
+    '/images/git.jpg',
+  ],
+
+    vfTransitions: ["fade"]
+  })
+};
+</script>
 
 
 <style lang="stylus" scoped>

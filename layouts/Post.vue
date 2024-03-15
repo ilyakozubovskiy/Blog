@@ -88,6 +88,11 @@ export default {
 </style>
 
 <style>
-.featuredimg {
-    max-width: 90%;
-}</style>
+
+@media screen and (min-width: 800px) {
+  .featuredimg {
+   max-width: 90%;
+}
+}
+
+</style>

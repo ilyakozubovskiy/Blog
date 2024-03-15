@@ -34,7 +34,7 @@ module.exports = {
       ],
       copyright: [
         {
-          text: 'MIT Licensed',
+          text: 'The MIT License (MIT)',
           link: 'https://opensource.org/license/mit/',
         },
        

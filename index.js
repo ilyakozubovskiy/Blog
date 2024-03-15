@@ -11,6 +11,10 @@ module.exports = (themeConfig) => {
     dotnet: '/images/dotnet.png',
     d365: '/images/d365.png',
     azure: '/images/azure.png',
+    pl400: '/images/pl400.png',
+    az900: '/images/az900.png',
+    pl900: '/images/pl900.png',
+    mb910: '/images/mb910.png',
 
     nav: themeConfig.nav || [
       {
