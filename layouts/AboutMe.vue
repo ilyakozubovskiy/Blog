@@ -46,17 +46,6 @@
   
 </template>
 
-<!-- <script>
-
-import { Carousel, Slide } from 'vue-carousel';
-export default {
-  components: {
-    Carousel,
-    Slide
-  }
-};
-</script> -->
-
 <style lang="stylus" scoped>
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap')
 .blog-tags
