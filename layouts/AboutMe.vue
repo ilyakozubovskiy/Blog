@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div class="row">
        <div class="column">
         <h1 > about.</h1>
@@ -43,13 +42,12 @@
     <img :src="$withBase('/images/git.jpg')" class="carousel-img">
   </slide>
 </carousel>
-   
-
 </div>
   
 </template>
 
-<script>
+<!-- <script>
+
 import { Carousel, Slide } from 'vue-carousel';
 export default {
   components: {
@@ -57,7 +55,7 @@ export default {
     Slide
   }
 };
-</script>
+</script> -->
 
 <style lang="stylus" scoped>
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap')

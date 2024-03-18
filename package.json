@@ -41,7 +41,6 @@
     "dayjs": "^1.8.19",
     "lodash": "^4.17.15",
     "remove-markdown": "^0.3.0",
-    "vue-carousel": "^0.18.0",
     "vue-feather-icons": "^4.21.0",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-sitemap": "^2.3.1",
@@ -50,6 +49,7 @@
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.1",
     "sort-package-json": "^1.31.0",
+    "vue-carousel": "^0.18.0",
     "vuepress": "^1.2.0"
   },
   "peerDependencies": {
