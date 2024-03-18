@@ -23,44 +23,41 @@
       </div>
     </div>
 
-    <vue-flux :options="vfOptions" :images="vfImages" :transitions="vfTransitions" ref="slider"/>
+  <carousel :perPage = "1" >
+  <slide >
+    <img :src="$withBase('/images/microsoft-badges.jpg')">
+  </slide>
+</carousel>
 
+<carousel :perPage = "1" :perPageCustom="[[768, 1], [1024, 2]]" >
+  <slide >
+    <img :src="$withBase('/images/scnsoftcert.jpg')" class="carousel-img" >
+  </slide>
+  <slide>
+    <img :src="$withBase('/images/cppyellow.jpg')"  class="carousel-img">
+  </slide>
+  <slide>
+    <img :src="$withBase('/images/cppwhite.jpg')" class="carousel-img" >
+  </slide>
+  <slide>
+    <img :src="$withBase('/images/git.jpg')" class="carousel-img">
+  </slide>
+</carousel>
+   
 
 </div>
   
 </template>
 
 <script>
-import { VueFlux, FluxPreloader } from "vue-flux";
-
+import { Carousel, Slide } from 'vue-carousel';
 export default {
-
   components: {
-    VueFlux,
-    FluxPreloader
-  },
-
-  data: () => ({
-    vfOptions: {
-      delay: 2000,
-      autoplay: true
-    },
-    vfImages: 
-    ['/images/pl400cert.jpg',
-    '/images/scnsoftcert.jpg',
-    '/images/pl900cert.jpg',
-    '/images/cppyellow.jpg',
-    '/images/az900cert.jpg',
-    '/images/cppwhite.jpg',
-    '/images/mb910cert.jpg',
-    '/images/git.jpg',
-  ],
-
-    vfTransitions: ["fade"]
-  })
+    Carousel,
+    Slide
+  }
 };
 </script>
-
 
 <style lang="stylus" scoped>
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap')
@@ -150,4 +147,7 @@ h1
   font-weight: bolder;
 }
 
+.carousel-img{
+  padding: 20px;
+}
 </style>
