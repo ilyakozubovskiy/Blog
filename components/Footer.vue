@@ -107,3 +107,12 @@ export default {
 }
 </script>
 
+<style>
+@media screen and (max-width: 400px) {
+  .logofooter {
+    width: 30px !important;
+  }
+}
+
+</style>
+
